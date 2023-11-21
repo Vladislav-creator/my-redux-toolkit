@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import  todoReducer  from './todoSlice';
-export default configureStore ({
-  reduser: {
-todos: todoReducer,
-  },
+import todoReducer from './todoSlice';
 
-})
+export default configureStore({
+  reducer: {
+    todos: todoReducer,
+  },
+});
 // import { filterReducer } from './filterSlice';
 // import storage from 'redux-persist/lib/storage';
 // import {
